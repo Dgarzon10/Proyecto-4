@@ -81,6 +81,8 @@ img{
     height: 5rem;
     width: 100%;
     align-items: center;
+    cursor: pointer;
+    
 }
 .BarraLateral.active .Contenedor-logo .logo{
     display: none;   
@@ -90,6 +92,7 @@ img{
     justify-content: center;
     align-items: center;
     padding-left: 2%;
+
 }
 
 .elementoLat{
@@ -148,6 +151,7 @@ img{
 .Contenedor-logo i{
     font-size: 3rem;
     margin-right: 0.5rem;
+    cursor: pointer;
 }
 .Contenedor-logo .nombre-logo{
     font-size: 2.5rem;
