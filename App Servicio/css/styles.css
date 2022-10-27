@@ -21,13 +21,13 @@ html{
     padding: 0;
 }
 body{
-    background: var(--beige);
+	font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     font-size: 1.6rem;
     width: 100%;
 }
 h1,h2,h3{
-    margin: 0;;
+    margin: 0;
 }
 ul{
     list-style: none;
@@ -43,16 +43,27 @@ img{
 
 /* Utilidades */
 
+
+
+.app{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /*SideBar*/
 
-aside{
+.BarraLateral{
     position: fixed;
+    margin: 0;
+    padding: 0;
     background-color:var(--gris);
     height: 100%;
-    width: 28rem;
+    width: 16%;
     top: 0;
     left: 0;   
-    padding: 0.8rem 1.4rem; 
+    
 }
 .BarraLateral .Contenedor-logo .logo{
     color: black;
@@ -61,6 +72,39 @@ aside{
     width: 100%;
     align-items: center;
     
+}
+
+.elementoLat a{
+    list-style: none;
+    display: block;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+	position: relative;
+	padding:1.5rem;
+}
+
+.elementoLat a:hover{
+    color: #2b2626;
+}
+
+.elementoLat a:hover:before{
+    width: 95%;
+}
+
+.elementoLat a:before{
+    content: '';
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 0%;
+	height: 100%;
+	background:var(--beige);
+	border-radius: 40px 0px 0px 40px;
+	z-index: -1;
+	transition: all 300ms ease-in-out;
 }
 .Contenedor-logo i{
     font-size: 3rem;
@@ -71,7 +115,27 @@ aside{
     font-weight: 500;
 }
 
-/*  MAIN    */
-main{
-    margin: 1rem ;
+.wrapper {
+	margin-left: 16%;
+    background-color: var(--beige);
 }
+
+.section {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	text-align: center;
+}
+.box-area h2 {
+	text-transform: uppercase;
+	font-size: 50px;
+}
+.box-area p {
+	line-height: 2;
+}
+.box-area {
+	width: 75%;
+}
+
+/*  MAIN    */
+
