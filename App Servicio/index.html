@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Servicio</title>
 </head>
 
@@ -15,33 +18,54 @@
                     <i class='bx bxl-graphql'></i>
                     <div class="nombre-logo">Eboost</div>
                 </div>
-                <i class='bx bx-menu'></i>
+                <i class='bx bx-menu' id="btn_menu"></i>
             </div>
 
             <div class="elementoLat cabecera_Barralateral">
                 <ul>
-                    <a href=""><li>Cosa 1</li></a>
-                    
+                    <a href=""><li>
+                        <i class='bx bxs-data iconEL'></i>
+                        <span class="LetrasEL">Cosa 1</span>
+                    </li></a>          
+                    <a href=""><li>
+                        <i class='bx bxs-data iconEL'></i>
+                        <span class="LetrasEL">Cosa 2</span>
+                    </li></a>              
                 </ul>
             </div>
 
             <div class="elementoLat sitios">
+                
                 <ul>
-                    <a href=""><li>Sitio 1</li></a>
+                    <a href=""><li>
+                        <i class='bx bx-bar-chart iconEL'></i>
+                        <span class="LetrasEL">Sitio 1</span>
+                    </li></a>
+                    <a href=""><li>
+                        <i class='bx bx-bar-chart iconEL'></i>
+                        <span class="LetrasEL">Sitio 2</span>
+                    </li></a>
+                    <a href=""><li>
+                        <i class='bx bx-bar-chart iconEL'></i>
+                        <span class="LetrasEL">Sitio 3</span>
+                    </li></a>
                     
                 </ul>
     
             </div>
             <div class="elementoLat configuraciones">
                 <ul>
-                    <a href=""><li>configuraciones</li></a>
+                    <a class="configuracion"   href=""><li>
+                        <i class='bx bx-cog'></i>
+                        <span class="LetrasEL">configuraciones</span>
+                    </li></a>
                 </ul>
             </div>
             <div class="elementoLat sesion">
                 <ul>
                     <a href=""><li>
                         <i class='bx bx-user'></i>
-                        <span>Perfil</span>
+                        <span class="LetrasEL">Perfil</span>
                     </li></a>
                 </ul>
             </div>
@@ -54,6 +78,25 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            var btn_menu=document.querySelector("#btn_menu")
+            var sidebar=document.querySelector(".BarraLateral")
+            var mainpage=document.querySelector(".wrapper");
+            var elementoLat=document.querySelectorAll(".elementoLat");
+            var LetrasEL=document.querySelectorAll(".LetrasEL");
+
+            btn_menu.onclick=function(){
+                sidebar.classList.toggle("active");
+                mainpage.classList.toggle("active");
+                elementoLat.forEach(elementoLat => {
+                    elementoLat.classList.toggle("active");
+                });
+                LetrasEL.forEach(LetrasEL => {
+                    LetrasEL.classList.toggle("active");
+                });
+            }
+        </script>
     
 </body>
 </html>
