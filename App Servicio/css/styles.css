@@ -55,15 +55,26 @@ img{
 /*SideBar*/
 
 .BarraLateral{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
     position: fixed;
     margin: 0;
     padding: 0;
     background-color:var(--gris);
     height: 100%;
-    width: 16%;
+    width: 17%;
     top: 0;
     left: 0;   
+    transition: all 0.5s ease;
     
+}
+.BarraLateral.active{
+    width: 4%;
+}
+.BarraLateral .Contenedor-logo{
+    display: flex;
+    align-items: center;
 }
 .BarraLateral .Contenedor-logo .logo{
     color: black;
@@ -71,9 +82,38 @@ img{
     height: 5rem;
     width: 100%;
     align-items: center;
-    
+}
+.BarraLateral.active .Contenedor-logo .logo{
+    display: none;   
+}
+.BarraLateral.active .Contenedor-logo i{
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
 }
 
+.elementoLat{
+    border-top: 0.3rem solid var(--beige);
+    /* border-top: none; */
+}
+.elementoLat.active{
+    /* border-top: 0.3rem solid var(--beige); */
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.elementoLat span.active{
+    /* opacity: 0; */
+    display: none;
+}
+.elementoLat .iconEL{
+    color: #fff;
+    font-size: 2.5rem;
+} 
+.BarraLateral :first-child{
+    border-style:none;
+}
 .elementoLat a{
     list-style: none;
     display: block;
@@ -116,8 +156,12 @@ img{
 }
 
 .wrapper {
-	margin-left: 16%;
+	margin-left: 17%;
     background-color: var(--beige);
+}
+.wrapper.active{
+    margin-left: 4%;
+    /* transition: all 0.5s ease; */
 }
 
 .section {
@@ -138,4 +182,3 @@ img{
 }
 
 /*  MAIN    */
-
