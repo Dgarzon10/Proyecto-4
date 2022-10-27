@@ -109,7 +109,16 @@ img{
 .Contenedor-logo i{
     font-size: 3rem;
     margin-right: 0.5rem;
+    color: #e7ebda;
 }
+
+.Contenedor-logo a{
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    color: #e7ebda;
+}
+
+
 .Contenedor-logo .nombre-logo{
     font-size: 2.5rem;
     font-weight: 500;
@@ -121,6 +130,7 @@ img{
 }
 
 .section {
+    
 	display: grid;
 	place-items: center;
 	min-height: 100vh;
@@ -130,12 +140,20 @@ img{
 	text-transform: uppercase;
 	font-size: 50px;
 }
+
+
 .box-area p {
 	line-height: 2;
 }
 .box-area {
-	width: 75%;
+	width: 65%;
 }
 
 /*  MAIN    */
+
+.seleccionadoLat{
+	background:var(--beige);
+	border-radius: 40px 0px 0px 40px;
+	
+}
 
