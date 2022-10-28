@@ -4,77 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Servicio</title>
 </head>
 
 <body>
         <aside class="BarraLateral">
 
-            <div class="Contenedor-logo">
+            <div class="elementoLat Contenedor-logo">
                 <div class="logo">
                     <i class='bx bxl-graphql'></i>
-                    <a href="index.html" class="nombre-logo">Eboost</a>
+                    <div class="nombre-logo">Eboost</div>
                 </div>
-                <i class='bx bx-menu'></i>
+                <i class='bx bx-menu' id="btn_menu"></i>
             </div>
 
             <div class="elementoLat cabecera_Barralateral">
                 <ul>
-                    <a href="resumen.html"><li>Cosa 1</li></a>
-                    
+                    <a href=""><li>
+                        <i class='bx bxs-data iconEL'></i>
+                        <span class="LetrasEL">Cosa 1</span>
+                    </li></a>          
+                    <a href=""><li>
+                        <i class='bx bxs-data iconEL'></i>
+                        <span class="LetrasEL">Cosa 2</span>
+                    </li></a>              
                 </ul>
             </div>
 
             <div class="elementoLat sitios">
+                
                 <ul>
-                    <a href=""><li>Sitio 1</li></a>
+                    <a href=""><li>
+                        <i class='bx bx-bar-chart iconEL'></i>
+                        <span class="LetrasEL">Sitio 1</span>
+                    </li></a>
+                    <a href=""><li>
+                        <i class='bx bx-bar-chart iconEL'></i>
+                        <span class="LetrasEL">Sitio 2</span>
+                    </li></a>
+                    <a href=""><li>
+                        <i class='bx bx-bar-chart iconEL'></i>
+                        <span class="LetrasEL">Sitio 3</span>
+                    </li></a>
                     
                 </ul>
     
             </div>
             <div class="elementoLat configuraciones">
                 <ul>
-                    <a href=""><li>configuraciones</li></a>
+                    <a class="configuracion"   href=""><li>
+                        <i class='bx bx-cog'></i>
+                        <span class="LetrasEL">configuraciones</span>
+                    </li></a>
                 </ul>
             </div>
             <div class="elementoLat sesion">
                 <ul>
                     <a href=""><li>
                         <i class='bx bx-user'></i>
-                        <span>Perfil</span>
+                        <span class="LetrasEL">Perfil</span>
                     </li></a>
                 </ul>
             </div>
         </aside>
 
         <div class="wrapper">
-
             <div class="section">
-
                 <div class="box-area">
-                    <h2 style="color: #2b2626">¿Como utilizar Eboost?</h2>
-                    <video controls >
-                        <source src="media/tutorial.mp4" type="video/mp4">
-                    </video>
+                    <h2 style="color: #2b2626">Homepage</h2>
                 </div>
-
-                <div class="box-area">
-                    <h2 style="color: #2b2626">Aumentar capacidad</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-                         elit. Hic, adipisci. Facere ullam sed, iste dolorem 
-                         vel magnam veniam sapiente doloribus et commodi tempore
-                          distinctio.</p>
-                </div>
-
-                <div class="box-area">
-                    <h2 style="color: #2b2626">lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, tenetur id fugiat optio, laudantium, totam quo expedita repellendus magnam dolor consequuntur accusamus labore nisi harum dolore facilis laborum omnis qui!</p>
-                </div>
-
             </div>
-
         </div>
 
+        <script src="../App Servicio/javascript/sidebar.js"></script>
     
 </body>
 </html>

@@ -1,5 +1,3 @@
-
-
 :root{
     --gris:#6c8388;
     --verdeGris:#dde0bd;
@@ -56,15 +54,26 @@ img{
 /*SideBar*/
 
 .BarraLateral{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
     position: fixed;
     margin: 0;
     padding: 0;
     background-color:var(--gris);
     height: 100%;
-    width: 16%;
+    width: 17%;
     top: 0;
     left: 0;   
+    transition: all 0.5s ease;
     
+}
+.BarraLateral.active{
+    width: 4%;
+}
+.BarraLateral .Contenedor-logo{
+    display: flex;
+    align-items: center;
 }
 .BarraLateral .Contenedor-logo .logo{
     color: black;
@@ -72,9 +81,41 @@ img{
     height: 5rem;
     width: 100%;
     align-items: center;
+    cursor: pointer;
     
 }
+.BarraLateral.active .Contenedor-logo .logo{
+    display: none;   
+}
+.BarraLateral.active .Contenedor-logo i{
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
 
+}
+
+.elementoLat{
+    border-top: 0.3rem solid var(--beige);
+    /* border-top: none; */
+}
+.elementoLat.active{
+    /* border-top: 0.3rem solid var(--beige); */
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.elementoLat span.active{
+    /* opacity: 0; */
+    display: none;
+}
+.elementoLat .iconEL{
+    color: #fff;
+    font-size: 2.5rem;
+} 
+.BarraLateral :first-child{
+    border-style:none;
+}
 .elementoLat a{
     list-style: none;
     display: block;
@@ -110,28 +151,23 @@ img{
 .Contenedor-logo i{
     font-size: 3rem;
     margin-right: 0.5rem;
-    color: #e7ebda;
+    cursor: pointer;
 }
-
-.Contenedor-logo a{
-    font-size: 3rem;
-    margin-right: 0.5rem;
-    color: #e7ebda;
-}
-
-
 .Contenedor-logo .nombre-logo{
     font-size: 2.5rem;
     font-weight: 500;
 }
 
 .wrapper {
-	margin-left: 16%;
+	margin-left: 17%;
     background-color: var(--beige);
+}
+.wrapper.active{
+    margin-left: 4%;
+    /* transition: all 0.5s ease; */
 }
 
 .section {
-    
 	display: grid;
 	place-items: center;
 	min-height: 100vh;
@@ -141,21 +177,11 @@ img{
 	text-transform: uppercase;
 	font-size: 50px;
 }
-
-
 .box-area p {
 	line-height: 2;
 }
 .box-area {
-	width: 65%;
+	width: 75%;
 }
 
 /*  MAIN    */
-
-.seleccionadoLat{
-	background:var(--beige);
-	border-radius: 40px 0px 0px 40px;
-	
-}
-
-
