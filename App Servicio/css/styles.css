@@ -180,4 +180,22 @@ img{
 	width: 75%;
 }
 
-/*  MAIN    */
+/* Estadisticas*/
+
+.stat .stat_local{
+    width: 80%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    border-style: solid ;
+    padding: 3rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    min-width: 108rem;
+}
+
+.stat .stat_local .grafico{
+    padding: 1.5rem;
+    max-width: 40rem;
+}
