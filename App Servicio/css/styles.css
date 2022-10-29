@@ -179,6 +179,11 @@ img{
 .box-area {
 	width: 75%;
 }
+.box-area_global {
+	width: 75%;
+    display: flex;
+    gap: 5%;
+}
 
 .resumen{
     background-color:var(--verdeGris);
@@ -189,6 +194,43 @@ img{
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     
 }
+.resumen_global{
+    background-color:var(--verdeGris);
+    width: 50%;
+    height: 30rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    display: inline-block;
+    
+}
+.titulo_resumen{
+    margin: 2.5%;
+    font-weight: 600;
+}
+.resumen_global canvas{
+    top: 0;
+    scale: 0.5;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+.resumen_global table{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+.resumen_global table th,td{
+    padding: 1rem;
+}
+.resumen_global table tr:hover td{
+    background-color: var(--naranja);
+}
+.resumen_global table thead{
+    background-color: var(--gris);
+    border-bottom: solid 5px black;
+}
+
 .stat{
     width: 100%;
     height: 90%;
