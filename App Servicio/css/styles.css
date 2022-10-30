@@ -170,6 +170,7 @@ img{
     margin-right: 0.5rem;
 }
 .Contenedor-logo .nombre-logo{
+    color: #232020;
     font-size: 2.5rem;
     font-weight: 500;
     
@@ -204,7 +205,8 @@ img{
 .box-area_global {
 	width: 75%;
     display: flex;
-    gap: 5%;
+    
+    gap: 3%;
 }
 
 .resumen{
@@ -243,8 +245,8 @@ img{
 }
 
 .resumen_global canvas{
-    margin-top: -11rem;
-    width: 20%;
+    margin-top: -18rem;
+    padding: 5rem;
     
 }
 

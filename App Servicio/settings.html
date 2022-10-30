@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styleSettings.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Servicio</title>
+</head>
+
+<body>
+        <aside class="BarraLateral">
+
+            <div class="elementoPrimero Contenedor-logo">
+                <div class="logo">
+                    <i class='bx bxl-graphql'></i>
+                    <a href="index.html">
+                        <h1 class="nombre-logo">Eboost</h1>
+                    </a>
+                </div>
+                <i class='bx bx-menu' id="btn_menu"></i>
+            </div>
+           
+
+            <div class="elementoLat sitios">
+                
+                <ul>
+                    <a href="resumenCafe.html"><li>
+                        <i class='bx bx-bar-chart iconEL'></i>
+
+                        <span class="LetrasEL">Ecommerce</span>
+                        <span class="LetrasEL">Tienda De Café</span>
+
+                    </li></a>
+                    <a href="resumenCafe.html"><li>
+                        <i class='bx bx-bar-chart iconEL'></i>
+                        <span class="LetrasEL">Blog Café</span>
+                    </li></a>
+                    
+                    
+                </ul>
+    
+            </div>
+            <div class="elementoLat configuraciones">
+                <ul>
+                    <a class="configuracion"   href="settings.html"><li>
+                        <i class='bx bx-cog'></i>
+                        <span class="LetrasEL">configuraciones</span>
+                    </li></a>
+                </ul>
+            </div>
+            <div class="elementoLat sesion">
+                <ul>
+                    <a href="profile.html"><li>
+                        <i class='bx bx-user'></i>
+                        <span class="LetrasEL">Perfil</span>
+                    </li></a>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="wrapper">
+
+            <div class="section">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+                            <h2 class="h3 mb-4 page-title">Settings</h2>
+                            <div class="my-4">
+                                <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Notifications</a>
+                                    </li>
+                                </ul>
+                                <h5 class="mb-0 mt-5">Notificaciones</h5>
+                                <p>Seleccionar notificaciones que quiere aceptar</p>
+                                <hr class="my-4" />
+                                <strong class="mb-0">Seguridad de la pagina web</strong>
+                                <p>Control de seguridad.</p>
+                                <div class="list-group mb-5 shadow">
+                                    <div class="list-group-item">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <strong class="mb-0">Actividad inusual</strong>
+                                                <p class="text-muted mb-0">Donec in quam sed urna bibendum tincidunt quis mollis mauris.</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="alert1" checked="" />
+                                                    <span class="custom-control-label"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <strong class="mb-0">Actividad financiera detectat</strong>
+                                                <p class="text-muted mb-0">Fusce lacinia elementum eros, sed vulputate urna eleifend nec.</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="alert2" />
+                                                    <span class="custom-control-label"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-4" />
+                                <strong class="mb-0">System</strong>
+                                <p>Habilitar para correcto funcionamiento.</p>
+                                <div class="list-group mb-5 shadow">
+                                    <div class="list-group-item">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <strong class="mb-0">Notificar sobre cambios en el servicio</strong>
+                                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="alert3" checked="" />
+                                                    <span class="custom-control-label"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <strong class="mb-0">Enviar noticias de Eboost al correo</strong>
+                                                <p class="text-muted mb-0">Nulla et tincidunt sapien. Sed eleifend volutpat elementum.</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="alert4" checked="" />
+                                                    <span class="custom-control-label"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <strong class="mb-0">Notificarme de tips de como usar la herramienta</strong>
+                                                <p class="text-muted mb-0">Donec in quam sed urna bibendum tincidunt quis mollis mauris.</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="alert5" />
+                                                    <span class="custom-control-label"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                
+
+            </div>
+
+        </div>
+
+        <script src="../App Servicio/javascript/sidebar.js"></script>
+    
+</body>
+</html>
